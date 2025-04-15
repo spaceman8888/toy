@@ -1,36 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| 단계 | 주제                  | 비고                          |
+| ---- | --------------------- | ----------------------------- |
+| 1    | 프로젝트 셋업         | 기본설정, 폴더 구조 설계      |
+| 2    | UI 레이아웃           | 라우팅, 레이아웃, 테마 설정   |
+| 3    | 파일 업로드 & 추출    | PDF 업로드 + 텍스트 추출      |
+| 4    | Langchain 텍스트 처리 | Split,Loader, Template        |
+| 5    | 임베딩, 벡터 저장     | MemoryVectorStore or Supabase |
+| 6    | 검색 기반 QA          | RetrevalChain, 문맥 대화      |
+| 7    | 챗 UI 구현            | 스트리밍 처리, UX 고민        |
+| 8    | 성능 최적화           | 캐싱, Debounce 등             |
+| 9    | CI/CD + 배포          | Github Actions, Vercel        |
+| 10   | 기술 회고 & 문서화    | README, 기술 블로그 초안 등   |
