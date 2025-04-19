@@ -1,0 +1,18 @@
+{
+  "extends": [
+    //어떤 기본 규칙 세트를 상속할지 정의하는 곳
+    "next/core-web-vitals", // next.js에서 권장하는 웹 퍼포먼스 규칙
+    "plugin:@typescript-eslint/recommended", // 타입스크립트 오류 및 코드 스타일 감지
+    "plugin:react-hooks/recommended", // react-hooks 규칙
+    "prettier" // eslint와 prettier 규칙 충돌 방지
+  ],
+  "plugins": [
+    // eslint에 추가 기능을 붙이는 확장
+    "@typescript-eslint", // 타입스크립트 검사
+    "react-hooks", // react-hooks 검사
+    "tailwindcss" // tailwindcss 클래스 검사
+  ],
+  "rules": {
+    "tailwindcss/no-custom-classname": "off" // tailwindcss 클래스 검사
+  }
+}

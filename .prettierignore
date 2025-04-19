@@ -1,0 +1,14 @@
+.next
+node_modules
+.git
+.husky
+.vscode
+.env
+public
+build
+dist
+.next
+.env
+.env.local
+.env.development.local
+.env.test.local
