@@ -7,7 +7,7 @@
     "prettier" // eslint와 prettier 규칙 충돌 방지
   ],
   "plugins": [
-    // eslint에 추가 기능을 붙이는 확장
+    // eslint에 추가 기능을 붙이는 확장s
     "@typescript-eslint", // 타입스크립트 검사
     "react-hooks", // react-hooks 검사
     "tailwindcss" // tailwindcss 클래스 검사
