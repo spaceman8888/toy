@@ -1,3 +1,3 @@
 export default function UploadPage() {
-  return <div>UploadPage</div>;
+  return <div>📁 UploadPage</div>;
 }
