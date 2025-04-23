@@ -1,3 +1,10 @@
+
+import { PdfUploader } from "@/features/upload/components/PdfUploader";
+
 export default function UploadPage() {
-  return <div>📁 UploadPage</div>;
+  return (
+    <div>
+      <PdfUploader />
+    </div>
+  );
 }
