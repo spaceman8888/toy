@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import {getDocument, PDFDocumentProxy, PDFPageProxy} from "pdfjs-dist"
 
 export const usePdfText =  () => {
     const [text, setText] = useState<string | null>(null);
@@ -14,12 +13,21 @@ export const usePdfText =  () => {
         setText(null);
 
         try {
+            // 파일을 버퍼로 변환
             const arrayBuffer = await file.arrayBuffer();
-            const pdf:PDFDocumentProxy = await getDocument({ data: arrayBuffer }).promise;
+            
+            // pdfjs 라이브러리 초기화
+            const pdfjsLib = await import("pdfjs-dist/legacy/build/pdf.mjs");
+            // pdfjs 워커 경로 설정
+            pdfjsLib.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
 
+            // pdf 문서 로드
+            const pdf = await pdfjsLib.getDocument({data:arrayBuffer}).promise;
             let fullText = "";
+
+            // 각 페이지의 텍스트 추출
             for(let i=1;i<=pdf.numPages;i++){
-                const page:PDFPageProxy = await pdf.getPage(i);
+                const page = await pdf.getPage(i);
                 const content = await page.getTextContent();
                 
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
