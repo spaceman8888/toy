@@ -10,6 +10,8 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@langchain/core": "^0.3.50",
+    "@langchain/openai": "^0.5.8",
     "@radix-ui/react-label": "^2.1.4",
     "@radix-ui/react-slot": "^1.2.0",
     "class-variance-authority": "^0.7.1",

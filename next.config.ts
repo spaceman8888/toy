@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
       type:'asset/resouce'
     })
     return config;
+  },
+  env:{
+    OPENAI_API_KEY : process.env.OPENAI_API_KEY
   }
 };
 
