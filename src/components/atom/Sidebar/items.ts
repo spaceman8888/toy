@@ -18,6 +18,11 @@ const items = [
                 id: "classification",
                 href: "/tutorial/langChain/classification"
             },
+            {
+                title: "4. Extraction",
+                id: "extraction",
+                href: "/tutorial/langChain/extraction"
+            },
         ]
     },
     {

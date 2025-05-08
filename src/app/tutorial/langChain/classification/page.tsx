@@ -49,9 +49,9 @@ export default function Page() {
     }
 
     return (
-        <div className="w-full">
+        <div >
             <h1 className="text-2xl font-bold">Classify Text into Labels</h1>
-            <div className="w-full mt-8 border-2 border-gray-300 rounded-md p-4">
+            <div className="mt-8 border-2 border-gray-300 rounded-md p-4">
                 <h1 className="text-xl font-bold">실습 결과</h1>
                 {/* <PdfUploader/> */}
                 <Textarea value={text} onChange={(e) => setText(e.target.value)} />   
