@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/upload" className="hover:text-gray-900">
               Upload
             </Link>
+            <Link href="/tutorial" className="hover:text-gray-900">Tutorial</Link>
           </nav>
         </header>
         <main className="max-w-4xl mx-auto p-4">{children}</main>
