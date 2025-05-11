@@ -28,7 +28,13 @@ const items = [
     {
         groupTitle: "LangGraph",
         id: "langGraph",
-        items: []
+        items: [
+            {
+                title: "1. Chatbot",
+                id: "chatbot",
+                href: "/tutorial/langGraph/chatbot"
+            }
+        ]
     },
     {
         groupTitle: "LangSmith",
